@@ -465,7 +465,7 @@ app.post("/api/admin/add-admin", async (req, res) => {
     });
   } catch (error) {
     console.error(" Add Admin Error:", error);
-    res.status(500).json({ message: "Server error",m:error });
+    res.status(500).json({ message: `Server error ${error}` });
   }
 });
 
